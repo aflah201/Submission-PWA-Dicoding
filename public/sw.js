@@ -37,7 +37,7 @@ if (workbox) {
         {url: '/img/icon512.png', revision: '1'},
         {url: '/img/PP.jpg', revision: '1'},
     ], {
-        ignoreUrlParametersMatcing: [/.*/],
+        ignoreUrlParametersMatching: [/.*/],
     });
     
     workbox.routing.registerRoute(
