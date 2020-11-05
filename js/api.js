@@ -41,7 +41,7 @@ function error(error) {
 const fetchApi = url => {
     return fetch(url, {
             // method: 'GET',
-            // mode: 'no-cors',
+            mode: 'no-cors',
             headers: {
                 'X-Auth-Token': '08999830a5224b2d9c7db860d4bd767a'
             }
