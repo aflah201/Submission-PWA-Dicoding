@@ -36,6 +36,10 @@ if (workbox) {
         {url: '/img/icon384.png', revision: '1'},
         {url: '/img/icon512.png', revision: '1'},
         {url: '/img/PP.jpg', revision: '1'},
+        {url: '/pages/contact.html', revision: '1'},
+        {url: '/pages/infoAllTim.html', revision: '1'},
+        {url: '/pages/klasemen.html', revision: '1'},
+        {url: '/pages/saved.html', revision: '1'},
     ], {
         ignoreUrlParametersMatching: [/.*/],
     });
