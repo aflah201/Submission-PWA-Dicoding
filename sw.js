@@ -49,8 +49,15 @@ if (workbox) {
                      maxAgeSeconds: 60 * 30
                 })
             ]
-        })
-    )
+        }),
+    );
+
+    workbox.routing.registerRoute(
+        ({ url }) => url.origin,
+        workbox.strategies.staleWhileRevalidate({
+            cacheName: "cache-football",
+        }),
+    );
 
     workbox.routing.registerRoute(
         new RegExp('/pages/'),
